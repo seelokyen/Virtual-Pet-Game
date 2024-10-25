@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@GameInterior.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sly.app.virtualpetgame.view.GameInteriorController">
+   <ImageView fx:id="foodButton" fitHeight="68.0" fitWidth="84.0" layoutX="73.0" layoutY="134.0" onMouseClicked="#handleFoodClick" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/food.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="ballButton" fitHeight="68.0" fitWidth="84.0" layoutX="157.0" layoutY="134.0" onMouseClicked="#handlePlayClick" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/ball.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="shampooButton" fitHeight="68.0" fitWidth="84.0" layoutX="241.0" layoutY="134.0" onMouseClicked="#handleShowerClick" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/shampoo.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="petImageView" fitHeight="311.0" fitWidth="335.0" layoutX="245.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/beagle_main.png" />
+      </image>
+   </ImageView>
+   <Pane layoutX="434.0" layoutY="14.0">
+      <children>
+         <Label fx:id="hungerLabel" layoutY="4.0" text="Hunger">
+            <font>
+               <Font size="12.0" />
+            </font></Label>
+         <ProgressBar fx:id="hungerBar" layoutY="32.0" prefHeight="20.0" prefWidth="80.0" progress="0.0" />
+      </children>
+   </Pane>
+   <Pane layoutX="556.0" layoutY="14.0">
+      <children>
+         <Label fx:id="happinessLabel" layoutY="5.0" text="Happiness">
+            <font>
+               <Font size="12.0" />
+            </font></Label>
+         <ProgressBar fx:id="happinessBar" layoutY="32.0" prefHeight="20.0" prefWidth="80.0" progress="0.0" />
+      </children>
+   </Pane>
+   <Pane layoutX="673.0" layoutY="14.0">
+      <children>
+         <Label fx:id="cleanlinessLabel" layoutY="4.0" text="Cleanliness">
+            <font>
+               <Font size="12.0" />
+            </font></Label>
+         <ProgressBar fx:id="cleanlinessBar" layoutY="32.0" prefHeight="20.0" prefWidth="80.0" progress="0.0" />
+      </children>
+   </Pane>
+   <Label fx:id="levelLabel" layoutX="53.0" layoutY="33.0" text="Level 1">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>

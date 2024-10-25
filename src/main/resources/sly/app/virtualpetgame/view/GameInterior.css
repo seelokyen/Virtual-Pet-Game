@@ -1,0 +1,32 @@
+.background {
+    -fx-background-image: url("/sly/app/virtualpetgame/view/images/interior_bg.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+#foodButton {
+    -fx-background-image: url("/sly/app/virtualpetgame/view/images/food.png");
+    -fx-background-size: cover;
+}
+
+#playButton {
+    -fx-background-image: url("/sly/app/virtualpetgame/view/images/ball.png");
+    -fx-background-size: cover;
+}
+
+#showerButton {
+    -fx-background-image: url("/sly/app/virtualpetgame/view/images/shampoo.png");
+    -fx-background-size: cover;
+}
+
+#hungerLabel, #happinessLabel, #cleanlinessLabel {
+    -fx-font-family: "Arial Rounded MT Bold", cursive;
+    -fx-font-size: 15px;
+}
+
+#levelLabel {
+    -fx-font-family: "Arial Rounded MT Bold", cursive;
+    -fx-font-size: 30px;
+    -fx-text-fill: #884502;
+}

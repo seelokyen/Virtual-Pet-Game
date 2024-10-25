@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@Welcome.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sly.app.virtualpetgame.view.LeaderboardController">
+    <children>
+         <TableView fx:id="leaderboardTable" layoutX="118.0" layoutY="116.0" prefHeight="368.0" prefWidth="564.0">
+             <columns>
+                 <TableColumn fx:id="usernameCol" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="141.0" text="Username">
+                     <cellValueFactory>
+                         <PropertyValueFactory property="username" />
+                     </cellValueFactory>
+                 </TableColumn>
+                 <TableColumn fx:id="petBreedCol" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="141.0" text="Pet Breed">
+                     <cellValueFactory>
+                         <PropertyValueFactory property="petBreed" />
+                     </cellValueFactory>
+                 </TableColumn>
+                 <TableColumn fx:id="petNameCol" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="141.0" text="Pet Name">
+                     <cellValueFactory>
+                         <PropertyValueFactory property="petName" />
+                     </cellValueFactory>
+                 </TableColumn>
+                 <TableColumn fx:id="levelCol" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="141.0" text="Level">
+                     <cellValueFactory>
+                         <PropertyValueFactory property="level" />
+                     </cellValueFactory>
+                 </TableColumn>
+             </columns>
+         </TableView>
+      <Label fx:id="heading" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="43.0" prefHeight="46.0" prefWidth="281.0" text="Leaderboard" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

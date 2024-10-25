@@ -1,0 +1,20 @@
+.background {
+    -fx-background-color: beige;
+}
+
+.label {
+    -fx-font-family: "Arial Rounded MT Bold", cursive;
+    -fx-font-size: 30px;
+    -fx-text-fill: #884502;
+    -fx-text-alignment: center;
+}
+
+.button {
+    -fx-background-color: #FFFAF0;
+    -fx-text-fill: #884502;
+    -fx-padding: 5 5 5 5;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-border-color: #C6B295;
+    -fx-border-width: 4px;
+}
